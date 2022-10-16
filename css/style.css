@@ -1,0 +1,7 @@
+section.container {
+    max-width: 600px;
+}
+
+#radioButton label {
+    margin-right: 15px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Js Pali e Dispari</title>
+</head>
+<body>
+    <section class="container my-5">
+        <h3>Verifica se la parola inserita &egrave; palindroma</h3>
+        <div id="alert" class="alert alert-primary">Suggerimento: osso, avallava, ingegni</div>
+        <input type="text" id="parolaUtente" class="form-control my-3" placeholder="Inserisci una parola">
+        <button id="btnVerificaParola" class="btn btn-primary">Verifica</button>
+    </section>
+    <section class="container mt-5">
+        <h3>Pari e Dispari</h3>
+        <div id="alert2" class="alert alert-primary">Scegli pari o dispari ed inserisci un numero da 1 a 5 per giocare</div>
+        <div id="radioButton" class="d-flex align-items-center justify-content-between">
+            <input type="radio" id="pariRadio" name="pari-dispari" value="Pari" class="form-check-input">
+            <label class="form-check-label" for="pari-dispari">Pari</label>
+            <input type="radio" id="dispariRadio" name="pari-dispari" value="Dispari" class="form-check-input">
+            <label class="form-check-label" for="pari-dispari">Dispari</label>
+            <input type="number" min="1" max="5" id="numeroUtente" class="form-control my-3 w-50" placeholder="Inserisci un numero da 1 a 5">
+            <button id="btnVerificaNumero" class="btn btn-primary">Verifica</button>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
