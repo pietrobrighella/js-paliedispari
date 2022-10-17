@@ -13,7 +13,8 @@ function palindroma(parola){
 }
 
 btnVerificaParola.addEventListener('click',function(){
-    let parolaInserita = parolaUtente.value;
+    // con tolowercase() riduco tutto in minuscolo, con trim() tolgo gli spazi vuoti prima e dopo la parola inserita e con replace() elimino eventuali spazi tra le lettere
+    let parolaInserita = parolaUtente.value.toLowerCase().trim().replace(/\s/g, '');
     const alert = document.getElementById('alert');
     if(palindroma(parolaInserita)){
         alert.classList.remove('alert-primary', 'alert-warning');
@@ -67,3 +68,6 @@ btnVerificaNumero.addEventListener('click', function(){
         alert2.innerText = `Tu hai giocato ${numeroUtente.value} e hai scelto ${pariRadio.value} il computer ha giocato ${numeroRandom}, la somma è ${sommaNumeri} (dispari) e quindi HAI PERSO!`;
     }
 })
+
+//APPUNTI
+// document.querySelector('input[name="rate"]:checked').value;
